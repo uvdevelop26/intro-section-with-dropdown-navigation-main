@@ -95,11 +95,20 @@ header {
     background: none;
     border: none;
     margin-right: 8px;
+    cursor: pointer;
+}
+
+.main-li button:hover{
+    color: var(--black);
 }
 
 .main-li a {
     text-decoration: none;
     color: var(--mediunGray);
+}
+
+.main-li a:hover{
+    color: var(--black);
 }
 
 .nested-navbar {
@@ -109,7 +118,7 @@ header {
 }
 
 .nested-li {
-    padding-bottom: 15px;
+    padding-bottom: 17px;
 }
 
 .nested-li>img {
@@ -120,13 +129,17 @@ header {
     text-align: center;
     display: grid;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 17px;
 }
 
 .options a {
     display: inline-block;
     text-decoration: none;
     color: var(--mediunGray);
+}
+
+.options a:hover{
+    color: var(--black);
 }
 
 .options .login {
@@ -145,6 +158,9 @@ header {
 
     header {
         padding-top: 10px;
+        position: fixed;
+        width: 100%;
+        background: var(--white);
     }
 
     .container-header {
@@ -310,6 +326,12 @@ section {
     border-radius: 10px;
 }
 
+.btn-text:hover{
+    background: var(--white);
+    color: var(--black);
+    border: 2px solid var(--black);
+}
+
 .brands {
     padding: 50px 10px;
     display: grid;
@@ -327,8 +349,7 @@ section {
 
 @media(min-width: 1024px) {
     section {
-        padding-top: 10px;
-        padding-bottom: 100px;
+        padding: 60px 100px;
     }
 
     .container-section {
@@ -338,12 +359,12 @@ section {
         display: grid;
         grid-auto-flow: column;
         grid-template-columns: 1.2fr 1fr;
-        gap: 30px;
+        gap: 50px;
 
     }
 
     .hero {
-        max-height: 600px;
+        max-height: 700px;
     }
 
     .info {
@@ -372,7 +393,7 @@ section {
     }
 
     .brands {
-        padding: 0px 10px;
+        padding: 80px 0px 0px 20px;
         width: 100%;
         height: fit-content;
         align-self: flex-end;
@@ -381,6 +402,9 @@ section {
 }
 
 @media(min-width: 1440px) {
+    section {
+        padding: 60px 100px;
+    }
     .container-section {
         padding: 0px 20px;
         max-width: 1250px;
@@ -406,8 +430,8 @@ section {
     }
 
     .brands {
-        padding: 0px 0px;
-        padding-left: 90px;
+        padding: 80px 0px 0px 90px;
+        /* padding-left: 90px; */
 
     }
 }
