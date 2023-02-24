@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+
+<body>
+  <header>
+    <div class="container-header">
+      <div class="mobile-header">
+        <img src="./images/logo.svg" alt="logo">
+        <button class="btn-open-menu">
+          <img src="./images/icon-menu.svg" alt="open menu">
+        </button>
+      </div>
+      <div class="modal">
+        <nav class="sidebar">
+          <div class="close-menu">
+            <button class="btn-close-menu">
+              <img src="./images/icon-close-menu.svg" alt="close menu">
+            </button>
+          </div>
+          <ul class="navbar">
+            <li class="main-li">
+              <button class="btn-features">Features</button>
+              <img src="./images/icon-arrow-down.svg" alt="arrow up">
+              <ul class="nested-navbar display-none">
+                <li class="nested-li">
+                  <img src="./images/icon-todo.svg" alt="todo icon">
+                  <a href="#">Todo List</a>
+                </li>
+                <li class="nested-li">
+                  <img src="./images/icon-calendar.svg" alt="calendar icon">
+                  <a href="#">Calendar</a>
+                </li>
+                <li class="nested-li">
+                  <img src="./images/icon-reminders.svg" alt="reminders icon">
+                  <a href="#">Reminders</a>
+                </li>
+                <li class="nested-li">
+                  <img src="./images/icon-planning.svg" alt="planning icon">
+                  <a href="#">Planning</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-li">
+              <button class="btn-company">Company</button>
+              <img src="./images/icon-arrow-down.svg" alt="Company">
+              <ul class="nested-navbar display-none">
+                <li class="nested-li"><a href="#">History</a></li>
+                <li class="nested-li"><a href="#">Our Team</a></li>
+                <li class="nested-li"><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li class="main-li"><a href="#">Careers</a></li>
+            <li class="main-li"><a href="#">About</a></li>
+          </ul>
+          <div class="options">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="register">Register</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="container-section">
+        <div class="hero">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="./images/image-hero-desktop.png" />
+            <img src="./images/image-hero-mobile.png" alt="hero mobile">
+          </picture>
+        </div>
+        <div class="info">
+          <div class="text">
+            <h1 class="text-title">Make <br class="display-none"> remote Work</h1>
+            <p class="text-description">
+              Get your team in sync, no matter your location. Steamline processes,
+              create team rituals, and watch productivity soar.
+            </p>
+            <button class="btn-text">Learn More</button>
+          </div>
+          <div class="brands">
+            <img src="./images/client-databiz.svg" alt="databitz brand">
+            <img src="./images/client-audiophile.svg" alt="audiophile brand">
+            <img src="./images/client-meet.svg" alt="meet brand">
+            <img src="./images/client-maker.svg" alt="" srcset="maker brand">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
