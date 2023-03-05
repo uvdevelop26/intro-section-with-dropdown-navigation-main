@@ -4,6 +4,7 @@ const btnMenuOpen = document.querySelector('.btn-open-menu');
 const btnCloseMenu = document.querySelector('.btn-close-menu');
 
 
+
 btnMenuOpen.addEventListener('click', () => {
     const modal = document.querySelector('.modal');
     const sidebar = document.querySelector('.sidebar');
@@ -62,4 +63,25 @@ btnCompany.addEventListener('click', () => {
     } else if (changeArrow.attributes.src.value === './images/icon-arrow-up.svg') {
         changeArrow.attributes.src.value = './images/icon-arrow-down.svg'
     }
+});
+
+window.addEventListener('click', (e) => {
+    const navbar = document.querySelector('.navbar');
+    const buttons = navbar.querySelectorAll('button')
+    const submenu1 = navbar.querySelectorAll('.nested-navbar')[0];
+    const submenu2 = navbar.querySelectorAll('.nested-navbar')[1];
+    const changeArrow = btnFeatures.nextElementSibling;
+    const changeArrow2 = btnCompany.nextElementSibling;
+
+    if (e.target === buttons[0] || e.target === buttons[1]) {
+        return
+    } else {
+        if (!submenu1.classList.contains('display-none') || !submenu2.classList.contains('display-none')) {
+            submenu1.classList.add('display-none')
+            submenu2.classList.add('display-none')
+            changeArrow.attributes.src.value = './images/icon-arrow-down.svg'
+            changeArrow2.attributes.src.value = './images/icon-arrow-down.svg'
+        }
+    }
+
 });
